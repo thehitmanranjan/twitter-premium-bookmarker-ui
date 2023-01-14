@@ -1,0 +1,29 @@
+{
+  "name": "twitter-premium-bookmarket-ui",
+  "version": "1.0.0",
+  "description": "UI for Twitter Premium Bookmarker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "dev": "parcel home.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehitmanranjan/twitter-premium-bookmarker-ui.git"
+  },
+  "author": "Pratik Ranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehitmanranjan/twitter-premium-bookmarker-ui/issues"
+  },
+  "homepage": "https://github.com/thehitmanranjan/twitter-premium-bookmarker-ui#readme",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1"
+  }
+}

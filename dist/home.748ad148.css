@@ -1,0 +1,126 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;800;900&display=swap";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto Slab, serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.grid-container-2-fr {
+  grid-template-columns: 100fr 1fr;
+  display: grid;
+}
+
+.active-list {
+  display: block;
+}
+
+.inactive-list {
+  display: none;
+}
+
+.navigation__container {
+  background-color: #def7ff;
+}
+
+.navigation__container__header {
+  text-align: center;
+  letter-spacing: normal;
+  padding: 14px 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.navigation__container__toggler {
+  cursor: pointer;
+  background-color: #def7ff;
+  text-decoration: none;
+}
+
+.navigation__list {
+  background-color: #d9f0f7;
+}
+
+.navigation__list li {
+  padding: 24px 16px;
+}
+
+.active, .bookmarks__collapsible:hover {
+  background-color: #555;
+}
+
+.bookmarks {
+  margin-top: 20px;
+}
+
+.bookmarks__collapsible {
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background-color: #777;
+  border: none;
+  outline: none;
+  padding: 18px;
+  font-size: 15px;
+}
+
+.bookmarks__content {
+  background-color: #f1f1f1;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.bookmarks__content__list {
+  margin-left: 50px;
+  list-style: square;
+}
+
+.login-twitter {
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.login-twitter__link {
+  cursor: pointer;
+  background: #1d9bf0;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.login-twitter__link__heading {
+  display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navigation__container__header {
+    text-align: start;
+  }
+}
+
+/*# sourceMappingURL=home.748ad148.css.map */

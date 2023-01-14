@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;800;900&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.grid-container-2-fr {
+    display: grid;
+    grid-template-columns: 100fr 1fr;
+}
+
+.active-list {
+    display: block;
+}
+
+.inactive-list {
+    display: none;
+}
+
+.navigation {
+    &__container {
+        background-color: #def7ff;
+        &__header {
+            font-size: 20px;
+            line-height: 20px;
+            padding: 14px 0;
+            text-align: center;
+            letter-spacing: normal;
+        }
+        &__toggler {
+            background-color: #def7ff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    &__list {
+        background-color: #d9f0f7;
+
+        li {
+            padding: 24px 16px;
+        }
+    }
+}
+
+.active,
+.bookmarks__collapsible:hover {
+    background-color: #555;
+}
+
+.bookmarks {
+    margin-top: 20px;
+    &__collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+    &__content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        &__list {
+            margin-left: 50px;
+            list-style: square;
+        }
+    }
+}
+@import "home";
+@import "media_queries";
